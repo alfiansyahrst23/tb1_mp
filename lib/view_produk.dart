@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:tugas_besar_1/form_produk.dart';
+import 'package:tugas_besar_1/page_produk.dart';
 
 class ViewProduct extends StatefulWidget {
   final String? IDProduk;
@@ -8,13 +9,18 @@ class ViewProduct extends StatefulWidget {
   final String? JenisProduk;
   final int? Stok;
 
-  const ViewProduct({Key? key, this.IDProduk, this.NamaProduk, this.Harga, this.JenisProduk, this.Stok})
+  const ViewProduct(
+      {Key? key,
+      this.IDProduk,
+      this.NamaProduk,
+      this.Harga,
+      this.JenisProduk,
+      this.Stok})
       : super(key: key);
 
   @override
   _ViewProductState createState() => _ViewProductState();
 }
-
 
 class _ViewProductState extends State<ViewProduct> {
   @override
@@ -32,11 +38,28 @@ class _ViewProductState extends State<ViewProduct> {
           _buildInfoCard("Harga : ${widget.Harga}"),
           _buildInfoCard("Jenis Produk : ${widget.JenisProduk}"),
           _buildInfoCard("Stok : ${widget.Stok}"),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Padding(
+              padding: const EdgeInsets.all(50.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  // Kembali ke halaman list produk
+                  Navigator.pushNamed(context, PageProduct.routeName);
+                },
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.orange, // Warna latar belakang tombol
+                  onPrimary: Colors.black, // Warna teks tombol
+                  textStyle: TextStyle(fontSize: 16.0), // Gaya teks tombol
+                ),
+                child: Text('DONE'),
+              ),
+            ),
+          ),
         ],
       ),
     );
   }
-
 
   Widget _buildInfoCard(String text) {
     return Card(

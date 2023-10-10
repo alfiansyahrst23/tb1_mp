@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tugas_besar_1/form_login.dart';
+import 'package:tugas_besar_1/page_produk.dart';
+import 'package:tugas_besar_1/view_produk.dart';
+import 'package:tugas_besar_1/form_produk.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,8 +26,14 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
       ),
+      initialRoute: '/', // Rute awal aplikasi
+      routes: {
+        // Daftar rute yang gunakan di aplikasi
+        '/form_login': (context) => LoginPage(), // Rute ke halaman utama
+        '/page_produk': (context) => PageProduct(), // Rute ke halaman form_produk
+      },
       home: LoginPage(),
     );
   }
