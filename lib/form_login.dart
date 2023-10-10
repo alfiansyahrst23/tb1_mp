@@ -20,11 +20,19 @@ class LoginPage extends StatelessWidget {
             TextField(
               controller: usernameController,
               decoration: InputDecoration(labelText: 'Username'),
+              style: TextStyle(
+              fontSize: 18.0, 
+              fontWeight: FontWeight.bold, 
+              ),
             ),
             TextField(
               controller: passwordController,
               decoration: InputDecoration(labelText: 'Password'),
               obscureText: true,
+              style: TextStyle(
+              fontSize: 18.0, 
+              fontWeight: FontWeight.bold, 
+              ),
             ),
             SizedBox(height: 50.0),
             ElevatedButton(

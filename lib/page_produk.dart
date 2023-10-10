@@ -48,14 +48,14 @@ Card(
   elevation: 8, 
   child: ListTile(
     title: Text(
-      'Alfiansyah Aresta',
+      '2457001',
       style: TextStyle(
         fontSize: 18.0, 
         fontWeight: FontWeight.bold, 
       ),
     ),
     subtitle: Text(
-      'Umur: 22',
+      'Produk: Earphone Wireless',
       style: TextStyle(
         fontSize: 14.0, 
       ),
@@ -71,14 +71,14 @@ Card(
   elevation: 8, 
   child: ListTile(
     title: Text(
-      'Farah Azizah',
+      '2457002',
       style: TextStyle(
         fontSize: 18.0, 
         fontWeight: FontWeight.bold, 
       ),
     ),
     subtitle: Text(
-      'Umur: 22',
+      'Produk: Laptop',
       style: TextStyle(
         fontSize: 14.0, 
       ),
@@ -94,14 +94,14 @@ Card(
   elevation: 8, 
   child: ListTile(
     title: Text(
-      'Gunawan Dwi Cahyono',
+      '2457003',
       style: TextStyle(
         fontSize: 18.0, 
         fontWeight: FontWeight.bold, 
       ),
     ),
     subtitle: Text(
-      'Umur: 22',
+      'Produk: Keyboard Wireless',
       style: TextStyle(
         fontSize: 14.0, 
       ),
